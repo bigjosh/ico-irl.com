@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"d79f2c3cc4","applicationID":"178643","transactionName":"IFYIFURcWgpVE0tWDgJJEgREQBkVWA4T","queueTime":3,"applicationTime":170,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"d79f2c3cc4",applicationID:"178643"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;p("lcp",[r])}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){if(t instanceof g&&!y){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=l.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d,p=t("handle"),l=t("loader"),v=t(9),m=t(3),g=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(h){}s=new PerformanceObserver(i);try{s.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}d=new PerformanceObserver(o);try{d.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var y=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,m(!1))})}v(c)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){y[t]=m(t).concat(e)}function v(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:h,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=P.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+P.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+P.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,h="addEventListener",y="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1212.min.js"},M=w&&b&&b[h]&&!/CriOS/.test(navigator.userAgent),P=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:M,userAgent:s,disabled:E};if(!E){t(1),t(7),g[h]?(g[h]("DOMContentLoaded",o,l(!1)),m[h]("load",r,l(!1))):(g[y]("onreadystatechange",i),m[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <title>The Awesome Foundation : New York City, NY</title>
+  <link rel="stylesheet" media="all" href="//d13mwkvpspjvzo.cloudfront.net/assets/application-83068d088080628cb095befd512d745954b713f7f5a61b61f49681b32ba0b7fd.css" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="wvW+oDEuhOUYWoMGaEF203uEbJk28bJ+H+CgrPFPdApbjPOKI2cHKXhEuDsoPUOms+dfA3gvhrgizEFd8jnocw==" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" property="og:description" content="Forwarding the interest of Awesome in the universe, $1,000 at a time." />
+  <meta property="og:image" content="https://d13mwkvpspjvzo.cloudfront.net/assets/logo-1500x750-6c038a7e84ceb2278bdebf4382aba2c894263a4a45bf366b3206b144fdd6ba48.png" />
+
+    <link rel="alternate" hreflang="bg" href="https://www.awesomefoundation.org/bg/chapters/nyc" />
+  <link rel="alternate" hreflang="en" href="https://www.awesomefoundation.org/en/chapters/nyc" />
+  <link rel="alternate" hreflang="es" href="https://www.awesomefoundation.org/es/chapters/nyc" />
+  <link rel="alternate" hreflang="fr" href="https://www.awesomefoundation.org/fr/chapters/nyc" />
+  <link rel="alternate" hreflang="hy" href="https://www.awesomefoundation.org/hy/chapters/nyc" />
+  <link rel="alternate" hreflang="pt" href="https://www.awesomefoundation.org/pt/chapters/nyc" />
+  <link rel="alternate" hreflang="ru" href="https://www.awesomefoundation.org/ru/chapters/nyc" />
+
+
+  <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
+
+  <script type="text/javascript" src="https://use.typekit.com/xhz4kzm.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  
+</head>
+<body class="chapters chapters-show">
+  <div id="site-container" class="flexbox vertical stretch">
+    <header class="main" id="header">
+  <nav>
+    <a class="logo" href="/en">
+      <img class="fast-forward" alt="" src="//d13mwkvpspjvzo.cloudfront.net/assets/logo-9ba838752a88cf55f0314f9a655c433cf22604eb13a39e26b0a5251f64efecd0.png" />
+      <h1>The Awesome Foundation</h1>
+</a>    <button class='hamburger'></button>
+    <ol>
+      <li><a class="home" href="/en">Home</a></li>
+      <li><a class="about_us" href="/en/about_us">About Us</a></li>
+      <li><a class="chapters" href="/en/chapters">Chapters</a></li>
+      <li><a class="apply" href="/en/submissions/new">Apply</a></li>
+    </ol>
+  </nav>
+</header>
+
+<section class="chapter-menu flexbox vertical center">
+  <div class="inner-wrapper">
+    <h1>Awesome Everywhere!</h1>
+    <section class="chapters in-menu flexbox horizontal wrap">
+          <article class="country">
+            <h3>Worldwide</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/awesomewithoutborders">Awesome Without Borders</a></p>
+        <p><a href="/en/chapters/disability">Disability</a></p>
+        <p><a href="/en/chapters/homelessness">Homelessness</a></p>
+        <p><a href="/en/chapters/onthewater">On the Water</a></p>
+        <p><a href="/en/chapters/steam">STEAM</a></p>
+        <p><a href="/en/chapters/vegan">Vegan</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>Armenia</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/artsakh">Artsakh</a></p>
+        <p><a href="/en/chapters/naturearmenia">Nature Armenia</a></p>
+        <p><a href="/en/chapters/yerevan">Yerevan</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>Australia</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/adelaide">Adelaide</a></p>
+        <p><a href="/en/chapters/fleurieu">Fleurieu</a></p>
+        <p><a href="/en/chapters/geelong">Geelong</a></p>
+        <p><a href="/en/chapters/lakemac">Lake Mac</a></p>
+        <p><a href="/en/chapters/maitland">Maitland</a></p>
+        <p><a href="/en/chapters/melbourne">Melbourne</a></p>
+        <p><a href="/en/chapters/newcastle">Newcastle</a></p>
+        <p><a href="/en/chapters/sydney">Sydney</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>Belgium</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/antwerp">Antwerp</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>Brazil</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/brumadinho">Brumadinho</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>Canada</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/digbyneck">Digby Neck, NS</a></p>
+        <p><a href="/en/chapters/halifax">Halifax, NS</a></p>
+        <p><a href="/en/chapters/kingston-on">Kingston, ON</a></p>
+        <p><a href="/en/chapters/kitchener-waterloo">Kitchener-Waterloo, ON</a></p>
+        <p><a href="/en/chapters/newmarket-ontario">Newmarket, ON</a></p>
+        <p><a href="/en/chapters/ottawa">Ottawa, ON</a></p>
+        <p><a href="/en/chapters/sarnia">Sarnia, ON</a></p>
+        <p><a href="/en/chapters/southshore">South Shore, NS</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>France</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/fontainebleau">Fontainebleau</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>Italy</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/aviano">Aviano</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>Netherlands</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/amsterdam">Amsterdam</a></p>
+        <p><a href="/en/chapters/groningen">Groningen</a></p>
+        <p><a href="/en/chapters/leiden">Leiden</a></p>
+        <p><a href="/en/chapters/rotterdam">Rotterdam</a></p>
+        <p><a href="/en/chapters/utrecht">Utrecht</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>Pakistan</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/pakistan">Pakistan</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>Russian Federation</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/moscow">Moscow</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>Singapore</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/singapore">Singapore</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>United Kingdom</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/bhx">Birmingham</a></p>
+        <p><a href="/en/chapters/glasgow">Glasgow</a></p>
+        <p><a href="/en/chapters/liverpool">Liverpool</a></p>
+              </div>
+            </article>
+          <article class="country">
+            <h3>United States</h3>
+            <div class="flexbox horizontal wrap">
+        <p><a href="/en/chapters/ann-arbor">Ann Arbor, MI</a></p>
+        <p><a href="/en/chapters/asheville">Asheville, NC</a></p>
+        <p><a href="/en/chapters/atlanta">Atlanta, GA</a></p>
+        <p><a href="/en/chapters/austin">Austin, TX</a></p>
+        <p><a href="/en/chapters/baltimore">Baltimore, MD</a></p>
+        <p><a href="/en/chapters/boston">Boston, MA</a></p>
+        <p><a href="/en/chapters/buffalo">Buffalo, NY</a></p>
+        <p><a href="/en/chapters/cassclay">Cass Clay</a></p>
+        <p><a href="/en/chapters/chicago">Chicago, IL</a></p>
+        <p><a href="/en/chapters/cleveland">Cleveland, OH</a></p>
+        <p><a href="/en/chapters/gainesville">Gainesville, FL</a></p>
+        <p><a href="/en/chapters/georgetown">Georgetown, MA</a></p>
+        <p><a href="/en/chapters/gloucester">Gloucester, MA</a></p>
+        <p><a href="/en/chapters/keywest">Key West, FL</a></p>
+        <p><a href="/en/chapters/los-angeles">Los Angeles, CA</a></p>
+        <p><a href="/en/chapters/marin">Marin, CA</a></p>
+        <p><a href="/en/chapters/miami">Miami, FL</a></p>
+        <p><a href="/en/chapters/montclair">Montclair, NJ</a></p>
+        <p><a href="/en/chapters/nyc">New York City, NY</a></p>
+        <p><a href="/en/chapters/newburgh">Newburgh, NY</a></p>
+        <p><a href="/en/chapters/northminneapolis">North Minneapolis, MN</a></p>
+        <p><a href="/en/chapters/nova">Northern Virginia (NOVA)</a></p>
+        <p><a href="/en/chapters/oahu">Oahu, HI</a></p>
+        <p><a href="/en/chapters/oakland">Oakland, CA</a></p>
+        <p><a href="/en/chapters/oklahomacity">Oklahoma City, OK</a></p>
+        <p><a href="/en/chapters/orlando">Orlando, FL</a></p>
+        <p><a href="/en/chapters/philadelphia">Philadelphia, PA</a></p>
+        <p><a href="/en/chapters/awesomepiqua">Piqua, OH</a></p>
+        <p><a href="/en/chapters/pittsburgh">Pittsburgh, PA</a></p>
+        <p><a href="/en/chapters/portland">Portland, OR</a></p>
+        <p><a href="/en/chapters/providence">Providence, RI</a></p>
+        <p><a href="/en/chapters/rochester">Rochester, NY</a></p>
+        <p><a href="/en/chapters/rockport">Rockport, MA</a></p>
+        <p><a href="/en/chapters/sf">San Francisco, CA</a></p>
+        <p><a href="/en/chapters/sanjose">San Jose, CA</a></p>
+        <p><a href="/en/chapters/santafe">Santa Fe, NM</a></p>
+        <p><a href="/en/chapters/seattle">Seattle, WA</a></p>
+        <p><a href="/en/chapters/southbend">South Bend, IN</a></p>
+        <p><a href="/en/chapters/statecollege">State College, PA</a></p>
+        <p><a href="/en/chapters/truckee">Truckee, CA</a></p>
+        <p><a href="/en/chapters/dc">Washington, DC</a></p>
+        <p><a href="/en/chapters/westminster">Westminster, MD</a></p>
+      </div>
+      </article>
+    </section>
+  </div>
+</section>
+
+    <div class="flexbox vertical center">
+      <div id="main-container" class="flexbox vertical stretch">
+        <section class="container-wrapper flexbox vertical center">
+          <section class="container">
+            <div id="flash">
+</div>
+
+            
+
+<header class="flexbox vertical center">
+  <div class="title-wrapper">
+    <div class="title flexbox horizontal wrap">
+      <h1 class="flexbox vertical stretch flex-1">
+        New York City, NY
+      </h1>
+      <div class="flexbox horizontal center wrap">
+        <div class="flexbox horizontal center wrap">
+        <a class="external email" title="Email" href="mailto:info@awesomenyc.org"></a>
+        <a title="Blog URL" class="external blog" href="http://blog.awesomefoundation.org/category/chapters/usa/nyc/"></a>
+        <a title="Instagram URL" class="external instagram" href="https://www.instagram.com/awesomefound.nyc/"></a>
+        <a title="Facebook URL" class="external facebook" href="http://www.facebook.com/awesomenyc"></a>
+        <a title="Twitter URL" class="external twitter" href="http://twitter.com/awesomenyc"></a>
+        </div>
+        <div class="flexbox horizontal center wrap">
+
+            <a class="apply-chapter" href="/en/submissions/new?chapter=nyc">Apply For a Grant</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+  <section class="chapter-header-wrapper owl-wrapper flexbox vertical">
+     <section id="owl-carousel" class="chapter-projects owl-carousel owl-theme">
+          <article class="project item" data-id="178152">
+            <a href="/en/projects/178152-the-passion-project">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Passion Project</h2>
+                  <span>By Shawn Waterman </span>
+                  <span>November 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F301275%2Foriginal%2Fpassionprojectimage-site.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="177841">
+            <a href="/en/projects/177841-gg">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>GG</h2>
+                  <span>By Jordan Dykstra </span>
+                  <span>October 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F295924%2Foriginal%2FGG-sticker-2021.09.07_noQR_forweb.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="176246">
+            <a href="/en/projects/176246-deliver4justice">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>#Deliver4Justice</h2>
+                  <span>By Sol Aramendi </span>
+                  <span>September 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F292813%2Foriginal%2F5_Delivery_Workers_waiting_for_other_workers_to_cross_together_Willis_Bridge_by_Aramendi.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="173761">
+            <a href="/en/projects/173761-black-box">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Black Box</h2>
+                  <span>By Michael Coppage </span>
+                  <span>August 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F288115%2Foriginal%2FBlack_Box_...jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="171063">
+            <a href="/en/projects/171063-collab-greenspace">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Collab GreenSpace </h2>
+                  <span>By The Bronx Collab </span>
+                  <span>July 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F288379%2Foriginal%2FIMG_20210610_172714_078.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="170149">
+            <a href="/en/projects/170149-lucid-dream-minigolf">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Lucid Dream Minigolf</h2>
+                  <span>By Bren Gaesser and Liam Singer </span>
+                  <span>June 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F285021%2Foriginal%2FIMG_20200920_152626%281%29.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="168173">
+            <a href="/en/projects/168173-the-anywhere-festival-of-everywhere-stages">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Anywhere Festival of  Everywhere Stages</h2>
+                  <span>By Liz Oakley </span>
+                  <span>May 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F280682%2Foriginal%2FLiz_Oakley_3.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="165606">
+            <a href="/en/projects/165606-carbon-sponge">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Carbon Sponge</h2>
+                  <span>By Brooke Singer </span>
+                  <span>April 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F271823%2Foriginal%2F4.JPG/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="164589">
+            <a href="/en/projects/164589-diy-assistive-tech-for-the-masses">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>DIY Assistive Tech for the Masses!</h2>
+                  <span>By Loreto Dumitrescu </span>
+                  <span>April 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F277112%2Foriginal%2FOpen_Rocker_Switch.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="164761">
+            <a href="/en/projects/164761-leave-some-for-me">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>&quot;Leave some for me&quot;</h2>
+                  <span>By Angela Miskis </span>
+                  <span>April 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F269966%2Foriginal%2F005_Angela_Miskis_Group_Shot_Community_Clean_up_12.20.20.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="163552">
+            <a href="/en/projects/163552-synth-library-nyc">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Synth Library NYC</h2>
+                  <span>By CY X &amp; Heidi Sabertooth </span>
+                  <span>March 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F267655%2Foriginal%2FSynth_Library_NYC_website_teaser.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="161301">
+            <a href="/en/projects/161301-east-new-york-community-land-trust">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>East New York Community Land Trust</h2>
+                  <span>By Albert Scott Jr. </span>
+                  <span>February 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F263109%2Foriginal%2FEnyclt3.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="157274">
+            <a href="/en/projects/157274-trust-your-struggle-foster-care-alumni-educators">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Trust Your Struggle: Foster Care Alumni Educators</h2>
+                  <span>By Lili Glauber </span>
+                  <span>January 2021</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F262105%2Foriginal%2FLG.awesomepic.2._intropng.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="155442">
+            <a href="/en/projects/155442-bipoc-lgbtqa-improv-scholarships">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>BIPoC &amp; LGBTQA+ Improv Scholarships</h2>
+                  <span>By Nolan Kennedy </span>
+                  <span>December 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F250914%2Foriginal%2Fimprov_jams_summer_2020.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="156119">
+            <a href="/en/projects/156119-saveourcompost">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>#SaveOurCompost</h2>
+                  <span>By Anna Sacks </span>
+                  <span>December 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F257527%2Foriginal%2FCompost_Banner_LES_2.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="155145">
+            <a href="/en/projects/155145-student-newspaper-curriculum">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Student Newspaper Curriculum</h2>
+                  <span>By Lara Bergen </span>
+                  <span>December 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F257515%2Foriginal%2FPhoto_16.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="152916">
+            <a href="/en/projects/152916-2020-transgiving-holiday-celebration">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>2020 TransGiving Holiday Celebration</h2>
+                  <span>By LaTravious Collins </span>
+                  <span>November 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F245585%2Foriginal%2FPhoto_Nov_17__7_32_18_PM.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="152267">
+            <a href="/en/projects/152267-integratenyc-peer-defense-project">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>IntegrateNYC Peer Defense Project</h2>
+                  <span>By Molly Murphy </span>
+                  <span>October 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F244187%2Foriginal%2FIntegrateNYC_Students.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="149465">
+            <a href="/en/projects/149465-globetops-in-nyc">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Globetops in NYC</h2>
+                  <span>By Marco Lao </span>
+                  <span>September 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F245510%2Foriginal%2Fglobetops-main.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="148894">
+            <a href="/en/projects/148894-a-black-queer-trans-garden-in-bed-stuy">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>A Black Queer &amp; Trans Garden in Bed-Stuy</h2>
+                  <span>By Morgen Bromell </span>
+                  <span>August 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F241542%2Foriginal%2FIMG_9333.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="146701">
+            <a href="/en/projects/146701-public-assistants">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Public Assistants </h2>
+                  <span>By DonChristian Jones </span>
+                  <span>July 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F232548%2Foriginal%2FMe_and_my_dawta.JPG/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="145159">
+            <a href="/en/projects/145159-mechanical-gardens-bike-co-op">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Mechanical Gardens Bike Co-op</h2>
+                  <span>By Josh Bisker </span>
+                  <span>June 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F231801%2Foriginal%2FMGBC_Some_Best_of_Photos_28.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="143007">
+            <a href="/en/projects/143007-leveler">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Leveler</h2>
+                  <span>By Alessandra DeBenedetti </span>
+                  <span>May 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F227492%2Foriginal%2Funnamed.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="140836">
+            <a href="/en/projects/140836-landlord-watch-covid19-response-faq">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Landlord Watch: COVID19 Response FAQ</h2>
+                  <span>By Madeline Blount </span>
+                  <span>April 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F219915%2Foriginal%2Fwebsite.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="140879">
+            <a href="/en/projects/140879-emergency-outdoor-bike-workshops">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Emergency Outdoor Bike Workshops</h2>
+                  <span>By Time&#39;s Up! Environmental Group </span>
+                  <span>April 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F220038%2Foriginal%2FScreen_Shot_2020-04-01_at_6.13.08_PM.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="141318">
+            <a href="/en/projects/141318-community-science-kits">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Community Science Kits</h2>
+                  <span>By Kiddie Science / Carmen Castillo-Barrett </span>
+                  <span>April 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F224112%2Foriginal%2F90142183-1571562379666026-2932852485754191872-o_orig.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="138992">
+            <a href="/en/projects/138992-nyhre-holistic-health-services">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>NYHRE Holistic Health Services</h2>
+                  <span>By Juan Cortez </span>
+                  <span>March 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F215615%2Foriginal%2FIMG_91ABF2BE2739-1.jpeg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="134777">
+            <a href="/en/projects/134777-catcalls-of-nyc">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Catcalls of NYC</h2>
+                  <span>By Sophie Sandberg </span>
+                  <span>February 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F214898%2Foriginal%2F37055915_495721690885715_1320823265245003776_o.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="134356">
+            <a href="/en/projects/134356-crown-heights-film-festival">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Crown Heights Film Festival</h2>
+                  <span>By Cynthia Chatman </span>
+                  <span>January 2020</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F210597%2Foriginal%2FScreen_Shot_2020-01-31_at_10.29.36_AM.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="132070">
+            <a href="/en/projects/132070-tech-learning-collective">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Tech Learning Collective</h2>
+                  <span>By Tech Learning Collective </span>
+                  <span>December 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F205561%2Foriginal%2F201912-tlc.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="130870">
+            <a href="/en/projects/130870-cookies-for-the-front-desk">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Cookies for the Front Desk</h2>
+                  <span>By Tamar Rubin </span>
+                  <span>November 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F203969%2Foriginal%2F11525538874_65700afb3f_o.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="129738">
+            <a href="/en/projects/129738-unidentified-persons-of-new-york">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Unidentified Persons of New York</h2>
+                  <span>By REBEKAH TURNER </span>
+                  <span>October 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F198377%2Foriginal%2Fawesome1.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="127814">
+            <a href="/en/projects/127814-preservation-of-the-dyke-tv-raw-footage-archive">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Preservation of the DYKE TV Raw Footage Archive </h2>
+                  <span>By Desiree Yael Vester </span>
+                  <span>September 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F197519%2Foriginal%2FScreen_Shot_2019-09-25_at_12.10.57_AM.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="125691">
+            <a href="/en/projects/125691-ribbed-mussel-rehabilitation-project">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Ribbed Mussel Rehabilitation Project</h2>
+                  <span>By Gary Francis </span>
+                  <span>August 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F191381%2Foriginal%2F77F8769E-6963-46F0-B758-B578B1D6A88F.jpeg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="122422">
+            <a href="/en/projects/122422-fourtop">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>FourTop</h2>
+                  <span>By Joanna Franchini </span>
+                  <span>July 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F191700%2Foriginal%2FScreen_Shot_2019-07-30_at_12.58.26_AM.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="122447">
+            <a href="/en/projects/122447-a-game-of-cat-and-mouse">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>A game of cat and mouse</h2>
+                  <span>By Laura Plimpton </span>
+                  <span>June 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F188443%2Foriginal%2FIMG_9969.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="119171">
+            <a href="/en/projects/119171-the-birthday-party-project">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Birthday Party Project</h2>
+                  <span>By Allison Dukes </span>
+                  <span>May 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F186589%2Foriginal%2FBirthday_tunnel.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="118790">
+            <a href="/en/projects/118790-new-neighbors-clothing-partnership">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>New Neighbors Clothing Partnership</h2>
+                  <span>By Shoshana Akabas </span>
+                  <span>April 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F182178%2Foriginal%2FNNCP-2.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="117138">
+            <a href="/en/projects/117138-the-open-plant-community-biology-project">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Open Plant Community Biology Project</h2>
+                  <span>By Rachel Haberstroh </span>
+                  <span>March 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F176588%2Foriginal%2F7E8ACC0A-9281-4AD2-91CC-5028A5ECA172.jpeg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="113739">
+            <a href="/en/projects/113739-project-x-bronx-poetry-arts-festival">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Project X Bronx Poetry &amp; Arts Festival</h2>
+                  <span>By Noel Quiñones </span>
+                  <span>February 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F170598%2Foriginal%2F20819236_1832591383697934_2540057173388360602_o.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="113151">
+            <a href="/en/projects/113151-women-s-weekend-film-challenge">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Women&#39;s Weekend Film Challenge</h2>
+                  <span>By Tracy Sayre and Katrina Medoff </span>
+                  <span>January 2019</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F169529%2Foriginal%2FCopy_of_GERWIGS-Afiya_Yearwood-44.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="111854">
+            <a href="/en/projects/111854-mobile-play-groundnyc">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>mobile play:groundNYC</h2>
+                  <span>By Rebecca Faulkner </span>
+                  <span>December 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F169470%2Foriginal%2Fslide.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="109661">
+            <a href="/en/projects/109661-fresh-pipes-a-concert-of-world-premieres-for-organ">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Fresh Pipes:A Concert of World Premieres for Organ</h2>
+                  <span>By Austin Philemon </span>
+                  <span>November 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F167013%2Foriginal%2Fimage4.jpeg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="108563">
+            <a href="/en/projects/108563-four-wise-cattle">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Four Wise Cattle</h2>
+                  <span>By Karyn Lao &amp; Mark Zlotsky </span>
+                  <span>October 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F162038%2Foriginal%2FCattle2_Snow2.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="107274">
+            <a href="/en/projects/107274-harriet-tubman-stamp">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Harriet Tubman Stamp</h2>
+                  <span>By Dano Wall </span>
+                  <span>September 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F161441%2Foriginal%2FIMG_6672.JPG/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="105707">
+            <a href="/en/projects/105707-just-write-community-project">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Just Write Community Project</h2>
+                  <span>By Tanesha &quot;Coach Tea&quot; Ingram  </span>
+                  <span>August 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F158674%2Foriginal%2Fjust-write.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="103782">
+            <a href="/en/projects/103782-block-party-for-a-just-rezoning">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Block Party for a Just Rezoning</h2>
+                  <span>By Northern Manhattan Is Not for Sale / Alto Manhattan No Se Vende </span>
+                  <span>July 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F156661%2Foriginal%2FNMN4S_BlockPartyFlyer-chopped.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="102014">
+            <a href="/en/projects/102014-homeward-bound-memories-identity-and-resilience">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Homeward Bound: Memories, Identity, and Resilience</h2>
+                  <span>By Mei Lum </span>
+                  <span>June 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F150740%2Foriginal%2FWOW_event_-_Homeward_Bound-_Diane_and_Mei_4.20.2018-01035.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="101131">
+            <a href="/en/projects/101131-21st-century-democracy-a-how-to-guide">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>21st CENTURY DEMOCRACY: A &quot;How-To&quot; Guide</h2>
+                  <span>By Darshana Narayanan </span>
+                  <span>May 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F149069%2Foriginal%2Fhackathon-everyone.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="99304">
+            <a href="/en/projects/99304-winc-con-2018">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>WinC Con 2018</h2>
+                  <span>By Regine Sawyer </span>
+                  <span>April 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F145837%2Foriginal%2FWinc_Awesome04.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="95595">
+            <a href="/en/projects/95595-pedestrian-wanderlust">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Pedestrian Wanderlust</h2>
+                  <span>By Rami Shafi </span>
+                  <span>March 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F139614%2Foriginal%2F8832_youtube_banner3.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="93625">
+            <a href="/en/projects/93625-computer1-0">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Computer1.0</h2>
+                  <span>By Julian Goldman &amp; Victoria Manganiello </span>
+                  <span>February 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F149924%2Foriginal%2F_MG_3566.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="90586">
+            <a href="/en/projects/90586-gallery-gurls">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Gallery Gurls</h2>
+                  <span>By jasmin hernandez </span>
+                  <span>January 2018</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F137438%2Foriginal%2F-1.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="88461">
+            <a href="/en/projects/88461-brooklyn-artisanal-gasoline">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Brooklyn Artisanal Gasoline</h2>
+                  <span>By Hackett </span>
+                  <span>December 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F132198%2Foriginal%2F201712-brooklyn-gasoline-20140716D_3601.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="86958">
+            <a href="/en/projects/86958-jefferson-gates">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Jefferson Gates</h2>
+                  <span>By Superchief Gallery/ Rachel Kolarik </span>
+                  <span>November 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F173091%2Foriginal%2FJeffersonGates_LoloYS_BoyKong.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="75960">
+            <a href="/en/projects/75960-syrian-refugee-graphic-mini-narratives">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Syrian Refugee Graphic Mini-Narratives</h2>
+                  <span>By Chris Russell </span>
+                  <span>October 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F127467%2Foriginal%2FScreen_Shot_2017-10-29_at_10.13.59_AM.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="84731">
+            <a href="/en/projects/84731-emma-s-torch-female-baking-collective">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Emma&#39;s Torch Female Baking Collective</h2>
+                  <span>By Julia Bumke </span>
+                  <span>September 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F124898%2Foriginal%2F201709-emmastorch.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="82959">
+            <a href="/en/projects/82959-we-the-ppl-politics-for-those-who-can-t-vote">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>We the Ppl: Politics for Those Who Can&#39;t Vote</h2>
+                  <span>By Zora Ilunga-Reed </span>
+                  <span>August 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F118897%2Foriginal%2FUntitled_design.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="82352">
+            <a href="/en/projects/82352-the-free-black-women-s-library">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Free Black Women&#39;s Library </h2>
+                  <span>By OlaRonke Akinmowo </span>
+                  <span>July 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F117905%2Foriginal%2F03_Akinmowo_Ola.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="81348">
+            <a href="/en/projects/81348-new-women-space">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>New Women Space </h2>
+                  <span>By Sandra Hong </span>
+                  <span>June 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F116275%2Foriginal%2Fdaytime_sample1.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="79912">
+            <a href="/en/projects/79912-1-minute-meal-a-documentary-portrait-of-nyc">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>1 Minute Meal: A Documentary Portrait of NYC</h2>
+                  <span>By James Boo </span>
+                  <span>May 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F116455%2Foriginal%2FOne_Minute_Meal_TITLE_CARD.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="78155">
+            <a href="/en/projects/78155-devised-theatre-project">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Devised Theatre Project</h2>
+                  <span>By Khristal Curtis </span>
+                  <span>April 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F112375%2Foriginal%2F201704-devised-theatre-project.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="76709">
+            <a href="/en/projects/76709-free-water-ecology-and-engineering-field-trips">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Free Water Ecology and Engineering Field Trips</h2>
+                  <span>By Matt Malina </span>
+                  <span>March 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F108006%2Foriginal%2Fstudent-looking-at-blue-heron.jpeg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="75693">
+            <a href="/en/projects/75693-women-who-build-artist-who-own">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Women Who Build: Artist Who Own</h2>
+                  <span>By Clara West  </span>
+                  <span>February 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F106367%2Foriginal%2FIMG_3403.JPG/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="73960">
+            <a href="/en/projects/73960-the-itinerant-writing-workshop-in-spanish">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Itinerant Writing Workshop in Spanish</h2>
+                  <span>By Maria Paz Cuevas Silva </span>
+                  <span>January 2017</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F105859%2Foriginal%2F201701-iwws.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="73201">
+            <a href="/en/projects/73201-action-item-fair">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Action Item Fair</h2>
+                  <span>By Ann Bickerton </span>
+                  <span>December 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F103493%2Foriginal%2Faction-item-fair.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="72166">
+            <a href="/en/projects/72166-coffee-cup-artwork">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Coffee Cup Artwork</h2>
+                  <span>By Phoebe Ho </span>
+                  <span>November 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F101622%2Foriginal%2F201611-cofee-cup-artwork.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="70698">
+            <a href="/en/projects/70698-game-night-event-series">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Game Night Event Series </h2>
+                  <span>By Sheetal Prajapati </span>
+                  <span>October 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F97874%2Foriginal%2FGame_Night_41.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="68336">
+            <a href="/en/projects/68336-piano-in-a-fishbowl">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Piano in a Fishbowl</h2>
+                  <span>By Adrian Untermyer </span>
+                  <span>September 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F93730%2Foriginal%2FPABT2.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="67618">
+            <a href="/en/projects/67618-murals-for-a-queens-supportive-housing-facility">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Murals for a Queens Supportive Housing Facility</h2>
+                  <span>By Laini Nemett </span>
+                  <span>August 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F92514%2Foriginal%2FNemett1_QueensboroSeine_Oilonlinen_82x61in.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="66334">
+            <a href="/en/projects/66334-id-shop">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>ID Shop</h2>
+                  <span>By Sue Jeong Ka </span>
+                  <span>July 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F90365%2Foriginal%2FKa_Sue_001.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="64749">
+            <a href="/en/projects/64749-queer-kid-stuff">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Queer Kid Stuff</h2>
+                  <span>By Lindsay Amer </span>
+                  <span>June 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F87410%2Foriginal%2FWhat_Does_Gay_Mean_Thumbnail.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="58141">
+            <a href="/en/projects/58141-nyc-popscope">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>NYC #popscope</h2>
+                  <span>By Isaac Lief </span>
+                  <span>May 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F75729%2Foriginal%2FIMG_0434.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="62804">
+            <a href="/en/projects/62804-cello-without-walls">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Cello Without Walls</h2>
+                  <span>By Jacob Cohen / Friends of Island Academy  </span>
+                  <span>April 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F85653%2Foriginal%2Fplaying_cello_for_each_other_4_4_16.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="60881">
+            <a href="/en/projects/60881-amateur-science-meets-superconductor-research">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Amateur Science Meets Superconductor Research</h2>
+                  <span>By Joseph Nardone </span>
+                  <span>March 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F83284%2Foriginal%2Fsuperconductorlogo.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="61393">
+            <a href="/en/projects/61393-the-harlem-free-school">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Harlem Free School</h2>
+                  <span>By Nailah Ricco </span>
+                  <span>March 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F83282%2Foriginal%2Fharlem-free-school.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="59421">
+            <a href="/en/projects/59421-slime-students-of-long-island-maker-expo">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>SLIME - Students of Long Island Maker Expo</h2>
+                  <span>By Kristina A. Holzweiss </span>
+                  <span>February 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F79561%2Foriginal%2Fslime-cropped.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="58184">
+            <a href="/en/projects/58184-gender-amplified">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Gender Amplified</h2>
+                  <span>By Ebonie Smith </span>
+                  <span>January 2016</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F76614%2Foriginal%2FGender_amplified-c.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="55863">
+            <a href="/en/projects/55863-swale">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Swale</h2>
+                  <span>By Mary Mattingly </span>
+                  <span>December 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F71978%2Foriginal%2FsmInterior_render_2.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="54847">
+            <a href="/en/projects/54847-visioning-the-adaptive-reuse-of-the-montauk-cutoff">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Visioning the adaptive reuse of the Montauk Cutoff</h2>
+                  <span>By Gil Lopez </span>
+                  <span>November 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F72260%2Foriginal%2Fmontauk-spur-IMG_4083.PNG/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="54217">
+            <a href="/en/projects/54217-mobile-print-power-combat-paper">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Mobile Print Power + Combat Paper</h2>
+                  <span>By Interference Archive </span>
+                  <span>October 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F69136%2Foriginal%2Fcombatpaper2.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="52010">
+            <a href="/en/projects/52010-the-free-portrait-project-crown-heights">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>THE FREE PORTRAIT PROJECT: CROWN HEIGHTS</h2>
+                  <span>By RUSTY ZIMMERMAN </span>
+                  <span>September 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F65307%2Foriginal%2Ffpp-facebook-cover-banner.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="51466">
+            <a href="/en/projects/51466-access-n-bk-flushing-avenue-j-m-station">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>ACCESS N. BK: Flushing Avenue J/M Station</h2>
+                  <span>By Alan Minor </span>
+                  <span>August 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F64328%2Foriginal%2FBroadway_Closed_Entrance_2.JPG/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="50079">
+            <a href="/en/projects/50079-alliance-for-girls-in-stem">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Alliance for Girls in STEM</h2>
+                  <span>By Sean Reed </span>
+                  <span>July 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F62155%2Foriginal%2FAva_and_robot.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="44534">
+            <a href="/en/projects/44534-lost-found">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Lost &amp; Found</h2>
+                  <span>By Betty Beaumont </span>
+                  <span>June 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F53102%2Foriginal%2F01._Wooden_Organ_Pipe.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="47614">
+            <a href="/en/projects/47614-brooklyn-plans-financial-pop-up-spaces-in-bk">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Brooklyn Plans: Financial pop-up spaces in BK</h2>
+                  <span>By Jennifer Velasquez and Kristen Euretig </span>
+                  <span>May 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F59075%2Foriginal%2Fcrown_heights_class.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="45864">
+            <a href="/en/projects/45864-4th-annual-sandwich-club-summit">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>4th Annual Sandwich Club Summit</h2>
+                  <span>By Shannon Finnegan &amp; Breanne Trammell </span>
+                  <span>April 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F55197%2Foriginal%2F2013SandwichSummit-28.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="44630">
+            <a href="/en/projects/44630-cricket-coop">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Cricket Coop</h2>
+                  <span>By Rodrigo Guzman S (RSM) </span>
+                  <span>March 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F54989%2Foriginal%2Fcricketcoop2.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="43340">
+            <a href="/en/projects/43340-the-coalition-zine">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Coalition Zine</h2>
+                  <span>By Alana Mohamed </span>
+                  <span>February 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F52409%2Foriginal%2Fcoalition.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="41525">
+            <a href="/en/projects/41525-the-rockaway-dye-garden">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Rockaway Dye Garden</h2>
+                  <span>By Isabella Scott </span>
+                  <span>January 2015</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F50099%2Foriginal%2FIMG_0430.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="40739">
+            <a href="/en/projects/40739-showered-with-hope-inc">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Showered With Hope Inc. </h2>
+                  <span>By David Lin </span>
+                  <span>December 2014</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F47893%2Foriginal%2Fshowered-with-hope.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="39982">
+            <a href="/en/projects/39982-to-park-or-not-to-park">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>To Park or Not to Park</h2>
+                  <span>By Nikki Sylianteng </span>
+                  <span>November 2014</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F46390%2Foriginal%2Fcarren-wilshire-fairfax-redesign.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="38028">
+            <a href="/en/projects/38028-the-dreary-coast">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Dreary Coast</h2>
+                  <span>By Jeff Stark </span>
+                  <span>October 2014</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F47892%2Foriginal%2Foriginal-dc.french2-wide.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="37305">
+            <a href="/en/projects/37305-barter-town">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Barter Town</h2>
+                  <span>By Heather Hart </span>
+                  <span>September 2014</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F41596%2Foriginal%2F1hart.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="36005">
+            <a href="/en/projects/36005-forget-me-not-shining-light-on-the-forgotten-boro">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Forget Me Not: Shining Light on the Forgotten Boro</h2>
+                  <span>By Bridget Bartolini </span>
+                  <span>August 2014</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F39788%2Foriginal%2FFBSP_Photo.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="33278">
+            <a href="/en/projects/33278-little-hackers-hacking-museums-for-nextgen-ny">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Little Hackers; hacking museums for NextGen NY</h2>
+                  <span>By Nick Gray </span>
+                  <span>June 2014</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F36237%2Foriginal%2F10358966_674352745933551_5535571973968675456_o.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="32609">
+            <a href="/en/projects/32609-dog-amusement-park">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Dog Amusement Park</h2>
+                  <span>By Kerri Schlottman-Bright </span>
+                  <span>May 2014</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F35251%2Foriginal%2FCorlears_Hook_Dog_Park.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="31774">
+            <a href="/en/projects/31774-curbside-compost-messaging">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Curbside Compost Messaging</h2>
+                  <span>By Debby Lee Cohen </span>
+                  <span>April 2014</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F35001%2Foriginal%2Fcurbside_compost_2.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="29608">
+            <a href="/en/projects/29608-lickestra-a-lickable-orchestra">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>LICKESTRA: A Lickable Orchestra</h2>
+                  <span>By Emilie Baltz </span>
+                  <span>March 2014</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F30802%2Foriginal%2FLICKESTRA2.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="28900">
+            <a href="/en/projects/28900-the-90-second-newbery-film-festival">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The 90-Second Newbery Film Festival</h2>
+                  <span>By James Kennedy </span>
+                  <span>February 2014</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F31085%2Foriginal%2FScreenShot2014-02-02at115845PM_zps253ef12a.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="27506">
+            <a href="/en/projects/27506-we-radiate">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>We Radiate </h2>
+                  <span>By Sashti Balasundaram </span>
+                  <span>January 2014</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F27796%2Foriginal%2Fimage.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="26874">
+            <a href="/en/projects/26874-sneel-open-hardware-swimming-robotic-snake">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Sneel - Open Hardware Swimming Robotic Snake</h2>
+                  <span>By gabriella levine </span>
+                  <span>December 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F26906%2Foriginal%2FsneelBoat.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="25944">
+            <a href="/en/projects/25944-pier-42-wild-oyster-survey">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Pier 42 Wild Oyster Survey</h2>
+                  <span>By The River Project </span>
+                  <span>November 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F25904%2Foriginal%2F76mm_wild_oyster_in_Pier_42_study_site.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="25495">
+            <a href="/en/projects/25495-hudson-river-project">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Hudson River Project</h2>
+                  <span>By James Bowthorpe </span>
+                  <span>October 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F25443%2Foriginal%2FScreen_Shot_2013-08-30_at_16.18.29.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="23610">
+            <a href="/en/projects/23610-the-love-motel-for-insects-anax-junios-variation">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Love Motel for Insects: Anax Junios Variation</h2>
+                  <span>By Brandon Ballengée </span>
+                  <span>September 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F23041%2Foriginal%2FP1000967.JPG/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="22542">
+            <a href="/en/projects/22542-climate-models-calendar">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Climate Models Calendar</h2>
+                  <span>By Rebecca Fowler </span>
+                  <span>August 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F23013%2Foriginal%2FIMG_7750.JPG/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="21145">
+            <a href="/en/projects/21145-subway-sets">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Subway Sets</h2>
+                  <span>By Dan Pierson </span>
+                  <span>July 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F21142%2Foriginal%2FSequence_01.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="19479">
+            <a href="/en/projects/19479-moore-street-aquaponics-education-farm">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Moore Street Aquaponics Education Farm</h2>
+                  <span>By Yemi Amu </span>
+                  <span>June 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F16181%2Foriginal%2Fmoore_st._farm3.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="19945">
+            <a href="/en/projects/19945-movies-at-sundown">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Movies at Sundown</h2>
+                  <span>By Bronx Documentary Center </span>
+                  <span>May 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F17039%2Foriginal%2FBDC_Film_Series_Crowd_Shot.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="18133">
+            <a href="/en/projects/18133-nametag-day">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Nametag Day</h2>
+                  <span>By Michael Morgenstern </span>
+                  <span>April 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F16163%2Foriginal%2Fnametag-day.gif/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="17601">
+            <a href="/en/projects/17601-brooklyn-brainery-backyard">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Brooklyn Brainery Backyard</h2>
+                  <span>By Jen Messier &amp; Jonathan Soma </span>
+                  <span>March 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F12665%2Foriginal%2FDSC_0221.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="16892">
+            <a href="/en/projects/16892-wayfinding-100-nyc-public-sculptures">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Wayfinding: 100 NYC Public Sculptures </h2>
+                  <span>By Bundith Phunsombatlert </span>
+                  <span>February 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F10949%2Foriginal%2FPhunsombatlert03.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="15803">
+            <a href="/en/projects/15803-uplift-yourself-uplift-the-world">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Uplift Yourself, Uplift the World</h2>
+                  <span>By Zachary Valenti </span>
+                  <span>January 2013</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F8496%2Foriginal%2FUPLIFT_logo.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="15091">
+            <a href="/en/projects/15091-1911-baker-electric-automobile">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>1911 Baker Electric Automobile</h2>
+                  <span>By Thomas W. Polapink </span>
+                  <span>December 2012</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F6920%2Foriginal%2F102812_023.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="15515">
+            <a href="/en/projects/15515-this-is-not-a-trash-pile">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>This is Not a Trash Pile</h2>
+                  <span>By  J McDonald/This is not a Trash Pile and Chef Moses/Culinary Kids in Rockaway, Queens </span>
+                  <span>November 2012</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F8536%2Foriginal%2Ftumblr_meulwgj9CH1s03abho1_1280.jpeg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="13967">
+            <a href="/en/projects/13967-the-acoustic-guitar-project">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Acoustic Guitar Project</h2>
+                  <span>By David Adams </span>
+                  <span>October 2012</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F4644%2Foriginal%2FScreen_shot_2012-09-12_at_12.57.54_PM.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="13586">
+            <a href="/en/projects/13586-illicit-couples-retreat">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Illicit Couples Retreat</h2>
+                  <span>By Ida Benedetto &amp; Nathan Austin </span>
+                  <span>September 2012</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F3722%2Foriginal%2F12-08-16AudioMeeting005.JPG/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="12794">
+            <a href="/en/projects/12794-concrete-safaris-afterschool-in-east-harlem">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Concrete Safaris: Afterschool in East Harlem</h2>
+                  <span>By Mac Levine </span>
+                  <span>August 2012</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F1991%2Foriginal%2FSAM_0096.JPG/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="12049">
+            <a href="/en/projects/12049-silent-lights">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Silent Lights</h2>
+                  <span>By Valeria Bianco </span>
+                  <span>July 2012</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F408%2Foriginal%2FSilent_Lights.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="11713">
+            <a href="/en/projects/11713-regret-project">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Regret Project</h2>
+                  <span>By Grayson Earle </span>
+                  <span>June 2012</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F1869%2Foriginal%2Fregretspic.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="10608">
+            <a href="/en/projects/10608-legomandala">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Legomandala</h2>
+                  <span>By Kylin O&#39;Brien </span>
+                  <span>May 2012</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F579%2Foriginal%2Flegomandalapartyimage.jpeg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="9001">
+            <a href="/en/projects/9001-596-acres">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>596 Acres</h2>
+                  <span>By Eric Brelsford and Paula Segal </span>
+                  <span>April 2012</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F159%2Foriginal%2F596.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="5746">
+            <a href="/en/projects/5746-urban-free-farm-producing-free-food-in-brooklyn">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2> Urban Free Farm - Producing free food in Brooklyn</h2>
+                  <span>By Bushwick City Farms </span>
+                  <span>October 2011</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F7239%2Foriginal%2Fimg_3516-2.jpeg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="1796">
+            <a href="/en/projects/1796-babycastles">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Babycastles</h2>
+                  <span>By Kunal Gupta </span>
+                  <span>June 2011</span>
+                </div>
+                <img src="//d13mwkvpspjvzo.cloudfront.net/assets/no-image-index-0d283b283895184e93d5afbcb6ff7b6f338c68c5a599b8bf79dd6556c630fe6a.png" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="785">
+            <a href="/en/projects/785-hip-hop-word-count">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Hip-Hop Word Count</h2>
+                  <span>By Tahir Hemphill </span>
+                  <span>July 2010</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F16037%2Foriginal%2FScreen_shot_2013-04-10_at_4.50.34_PM.png/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="1151">
+            <a href="/en/projects/1151-the-iguana-house-at-the-brooklyn-children-s-museum">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Iguana House at the Brooklyn Children&#39;s Museum</h2>
+                  <span>By The Iguana House at the Brooklyn Children&#39;s Museum </span>
+                  <span>April 2010</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F7243%2Foriginal%2Fbloomberg_small.jpeg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="792">
+            <a href="/en/projects/792-the-anywhere-organ">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>The Anywhere Organ</h2>
+                  <span>By Matthew Borgatti </span>
+                  <span>March 2010</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F16039%2Foriginal%2Ftumblr_kytz5gteNp1qbois4o1_1280.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+          <article class="project item" data-id="818">
+            <a href="/en/projects/818-laser-tweezers">
+              <div class="image-wrapper">
+                <div class="project-name">
+                  <h2>Laser Tweezers</h2>
+                  <span>By Ben Dubin-Thaler, Ph.D. </span>
+                  <span>January 2010</span>
+                </div>
+                <img src="https://dkklc3d0jy1nx.cloudfront.net/q/src/https%3A%2F%2Faf-production.s3.amazonaws.com%2Fphotos%2Fimages%2F16041%2Foriginal%2F4399899943_19f1902ae2_b.jpg/output/jpg/convert/-auto-orient/thumb/500x300%23" />
+              </div>
+</a>          </article>
+      </section>
+    <div class="owl-dots-wrapper flexbox horizontal wrap">
+      <div id="owl-dots" class="owl-dots"></div>
+    </div>
+  </section>
+
+<div class="flexbox vertical center">
+  <section class="chapter-info">
+    <section class="description">
+      <article class="about">
+        <h2>About Us</h2>
+        <!--
+<div style="border:1px solid #000; padding: 1em; background-color:pink; margin-bottom: 1em">
+
+<h4 style="margin-bottom: .75em">Our next event: April 15th, 2021</h4>
+<h3 style="margin-bottom: 1em">CANCELED: $1,000 + NYC Mayoral Candidates + You!</h3>
+<p>Unfortunately, our April 15th event has been cancelled, but we will still be granting our April grant. Please sign up for our mailing list or follow us on social media to find out more.</p>
+    </div>
+-->
+
+<!-- https://script.google.com/macros/s/AKfycbw8pA3ArfQsNQM_TmXxDKPNNSDIWT8dO3ij1yrxelXtnVJBR_c/exec -->
+
+<!-- Begin MailChimp Signup Form -->
+
+<p><link href="https://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://awesomefoundation.us2.list-manage.com/subscribe/post?u=b092c01d772042f79ee59293b&amp;id=246f43f7d5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <label for="mce-EMAIL">Subscribe to our announcement list</label>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div></p>
+
+<!--End mc_embed_signup-->
+
+<p><strong>Our application deadline is the last day of the month. We meet on the second Monday of each month to review the previous month&#39;s submissions. If your application is time-sensitive, please let us know in your applications.</strong></p>
+
+<p>New York is bubbling with creativity and we are looking to fund really cool projects that touch everything from tech to social to art to media to education. Do you have a great idea? <a href="/submissions/new?chapter=nyc">Apply for an AwesomeNYC grant today</a>!</p>
+
+<p>Some tips for writing an awesome grant application:
+<ul>
+<li>Be brief - we have a ton of applications to review every month</li>
+<li>Be fun - remember, you want your application to stand out from the pack</li>
+<li>Be specific - we want to know how you&#39;re going to use the $1,000 - show us that you&#39;ve thought this thing through</li>
+</ul></p>
+
+<p>If your project was not selected in a given month, please feel free to reapply. We generally only review applications from the current month&#39;s pool. In addition, please feel free to get in touch with us if you&#39;d like feedback on your application - we&#39;re happy to talk!</p>
+
+      </article>
+
+    </section>
+
+    <section class="trustees">
+      <h2>Meet the Trustees</h2>
+      <ol>
+        <li>
+          <article class="trustee dean">
+            <a class="avatar" href="http://www.jcn.me/">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Jesse Chan-Norris</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Jesse Chan-Norris" src="https://www.gravatar.com/avatar/ea0d8f1cd6eb7266988e78d8340955f0?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="http://AshleyAlbert.com">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Ashley Albert</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Ashley Albert" src="https://www.gravatar.com/avatar/5b40b1d3241c15420182e424bfdbb1dd?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="http://www.jeremyb.com">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Jeremy Bloom</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Jeremy Bloom" src="https://www.gravatar.com/avatar/e1b28b2f58cd362cc21030bca0e9c21f?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="http://www.nicoleabrodeur.com">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Nicole Brodeur</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Nicole Brodeur" src="https://www.gravatar.com/avatar/d334a81d371235a0f0e7a19fc58f3142?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Maria Dautruche</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Maria Dautruche" src="https://www.gravatar.com/avatar/2c413faf6e2f6347eef377a9f25c0f5f?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Sara Enright</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Sara Enright" src="https://www.gravatar.com/avatar/f9d4340d00e22c49d116b279cc6f9727?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="http://www.melaniekahl.com">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Melanie Kahl</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Melanie Kahl" src="https://www.gravatar.com/avatar/f92b462cf0a14fcfcf38c2b645ce6e3d?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="/en/chapters/nyc">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Celeste LeCompte</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Celeste LeCompte" src="https://www.gravatar.com/avatar/ea4b82d1a83b768be41d741de6f232f5?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Stuart Lynn</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Stuart Lynn" src="https://www.gravatar.com/avatar/7159b29480c1885894cd1c44c880afeb?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="http://www.cynthiamanick.com/">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Cynthia Manick</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Cynthia Manick" src="https://www.gravatar.com/avatar/f76a3313bb62ef94bd65fd9123328fda?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="/en/chapters/nyc">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Richard Morgan</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Richard Morgan" src="https://www.gravatar.com/avatar/174faab6b2f84166e302278a886ac30a?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="/en/chapters/nyc">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Kat Mustatea</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Kat Mustatea" src="https://www.gravatar.com/avatar/36bc01359eb1a0685fb110aba8ab93c5?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="/en/chapters/nyc">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Elise Pereira</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Elise Pereira" src="https://www.gravatar.com/avatar/e4824508b1792d2fda70142db6841443?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="http://charlesphilipp.com/">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Charles Philipp</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Charles Philipp" src="https://www.gravatar.com/avatar/05f12cb862d0a365de41daad6dc71e86?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="http://join.awesomenyc.org">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Guest Trustee</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Guest Trustee" src="https://www.gravatar.com/avatar/754527ff69f8ed565414873cdb6a69da?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="http://join.awesomenyc.org">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Guest Trustee</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Guest Trustee" src="https://www.gravatar.com/avatar/bb7b07f0de4b4106331cdfcaafd9d2a8?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+        <li>
+          <article class="trustee trustee">
+            <a class="avatar" href="http://tubmanstamp.com">
+              <div class="hat"></div>
+              <div class="trustee-details">
+                <h3>Dano Wall</h3>
+              </div>
+              <div class="avatar">
+                <img alt="Photo of Dano Wall" src="https://www.gravatar.com/avatar/6d7d8676db2db5757e4c65db1f05994c?d=retro&amp;s=134" />
+              </div>
+</a>          </article>
+        </li>
+      </ol>
+    </section>
+
+  </section>
+
+    <section class="chapter-apply flexbox vertical center">
+      <div class="apply-button">
+        <a href="/en/submissions/new?chapter=nyc">Apply For a Grant</a>
+      </div>
+    </section>
+  
+</div>
+
+
+
+
+          </section>
+        </section>
+      </div>
+    <footer>
+  <p>
+    <a href="/en/about_us">About &amp; Contact</a>
+    <a href="/en/faq">FAQ</a>
+
+    <a target="_blank" href="https://twitter.com/awesomefound"><i class="icon-twitter" title="Twitter"></i></a>
+    <a target="_blank" href="https://www.facebook.com/awesomefoundation"><i class="icon-facebook" title="Facebook"></i></a>
+
+      <a href="/en/sign_in">Sign in</a>
+  </p>
+
+  <p>
+    <a href="/bg/chapters/nyc">Български</a>
+    <a href="/en/chapters/nyc">English</a>
+    <a href="/es/chapters/nyc">Español</a>
+    <a href="/fr/chapters/nyc">Français</a>
+    <a href="/hy/chapters/nyc">ՀԱՅԵՐԵՆ</a>
+    <a href="/pt/chapters/nyc">Português</a>
+    <a href="/ru/chapters/nyc">Русский</a>
+  </p>
+</footer>
+
+    </div>
+    <script>
+window.awesomeEnvironment = {}
+</script>
+
+<script src="//d13mwkvpspjvzo.cloudfront.net/assets/application-5b1800cd0ca69a8f8a4dc8a7f2ed46744237bea48cd80e49cb36a8bf62afde18.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9594800-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+  <script>
+//<![CDATA[
+
+  jQuery(function($) {
+    $("#rss-feeds").rss("",
+    {
+      ssl: true,
+      limit: 6,
+      layoutTemplate: '<ol class="feed">{entries}</ol>',
+      entryTemplate: '<li class="post"><a href="{url}"><span class="post-date">{formatted_date}</span>{title}</a></li>',
+      tokens: {
+        formatted_date: function(entry, tokens) {
+          date = (new Date(tokens.date)) || Date.now();
+          return date.toString('yyyy-MM-dd');
+        }
+      }
+    }
+    )
+  })
+
+//]]>
+</script>
+
+
+
+  </div>  
+</body>
+</html>
